@@ -84,5 +84,5 @@ run_analysis <- function() {
   
   averagedata <- averagedata[order(averagedata$subject, averagedata$activity), ]
   
-  write.table(averagedata, "averagedata.txt", sep = " ", row.names=F)
+  write.table(averagedata, "averagedata.txt", sep = " ", row.names=FALSE, quote=FALSE)
 }                                                                           
